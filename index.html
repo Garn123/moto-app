@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>MOTO API</title>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html" class="h1">MotorbikesWiki</a></h1>
+      <ul class="navbar">
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">LOG IN</a></li>
+      </ul>
+    </header>
+    <form>
+      <input
+        type="text"
+        id="searchbar"
+        placeholder="Search by brand or model"
+      />
+      <button type="submit" class="search-btn">Search</button>
+    </form>
+
+    <div class="card-container">
+      <!--  -->
+      <div class="scene">
+          <div class="card">
+            <div class="cards card-front">
+              <img
+              src="https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/21MY_Z900_BK4_STU.png"
+              alt="model image"
+            />
+            <div class="text-box">
+              <h3>Kawasaki Z900</h3>
+            </div>
+            </div>
+            <div class="cards card-back">
+              <div class="card-back__">
+                <p class="card-back__text"><span>Marca: </span>Bemeube</p>
+                <p class="card-back__text"><span>Modelo: </span>seisientos</p>
+                <p class="card-back__text"><span>Cilindrada: </span>1000</p>
+              </div>
+              <div class="card-back__img"><img src="./assets/BMW-Logo.png" alt="bmw"></div>
+              
+            </div>
+          </div>
+      </div>
+      <!--  -->
+      
+    </div>
+  </body>
+</html>
