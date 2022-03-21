@@ -137,6 +137,10 @@ input:focus {
 .card img {
   max-width: 100%;
 } */
+.card-container {
+  display: flex;
+  justify-content: center;
+}
 
 .scene {
   width: 350px;
@@ -165,6 +169,8 @@ input:focus {
   display: flex;
   flex-direction: column;
   position: absolute;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 300px;
   border-radius: 20px;
@@ -225,14 +231,21 @@ input:focus {
   align-items: center;
 }
 
-.text-box h3,
-p {
+.text-box h3{
+  font-size: 40px;
+}
+
+.text-box p {
   margin: 3px;
   padding-bottom: 7px;
 }
 
 
-/* @media (max-width: 400px) {
+@media (max-width: 420px) {
+  .cards{
+    width: 95%;
+  }
+
   header {
     justify-content: center;
     background: url(./assets/header-query.jpg);
@@ -277,4 +290,11 @@ p {
   header ul li {
     margin: 0 15px;
   }
-} */
+}
+
+@media (min-width: 1015px) {
+  header ul {
+    margin: 0;
+  }
+}
+

@@ -12,7 +12,7 @@ const {
 BrandRoutes.get('/', getAllBrand);
 BrandRoutes.get('/:id', getOneBrand);
 BrandRoutes.post('/', [isAuth], upload.single('logo'), createBrand);
-BrandRoutes.patch('/:id', [isAuth], upload.single('logo'), updateBrand);
+BrandRoutes.patch('/:id', upload.single('logo'), updateBrand);
 BrandRoutes.delete('/:id', [isAuth], deleteBrand);
 
 module.exports = BrandRoutes;
