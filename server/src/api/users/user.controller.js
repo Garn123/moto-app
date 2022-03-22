@@ -20,13 +20,15 @@ const loginUser = async (req, res, next) => {
 }
 const logoutUser = async (req, res, next) => {
     try {
-        const token = null
+        const token = null;
+        console.log(token)
         return res.status(200).json(token);
     } catch (error) {
         return next(setError(500, "Fail to logout user"))
     }
 }
 const registerUser = async (req, res, next) => {
+    console.log(req.body)
     try {
         const user = new User(req.body);
         const userDuplicate = await User.findOne({ email: user.email });

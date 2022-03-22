@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <script src="./login.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" class="h1">MotorbikesWiki</a></h1>
+    </header>
+    <div class="mainContainer">
+        <div class="loginContainer">
+            <div class="loginHeader">
+                <h1>Login / Register</h1>
+            </div>
+            <div class="loginForm">
+                <form action="#" method="POST">
+                        <input type="text" name="name" class="form-control" placeholder="Username">
+                        <input type="text" name="email" class="form-control" placeholder="Email">
+                        <input type="password" class="form-control" id="password" name="password"
+                            placeholder="Password">
+                    <div class="login">
+                    <button type="button" onclick="login()" class="btn btn-1">Login</button>
+                    <button type="button" onclick="postData()" class="btn btn-2">Register</button>
+                    <button type="button" onclick="logOut()" class="btn btn-3">Log out</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

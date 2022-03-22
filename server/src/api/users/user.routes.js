@@ -7,7 +7,7 @@ const {
     registerUser } = require('./user.controller');
 
 UserRoutes.post('/login', loginUser);
-UserRoutes.post('/logout', [isAuth], logoutUser);
+UserRoutes.post('/logout', logoutUser);
 UserRoutes.post('/register', registerUser);
 
 module.exports = UserRoutes;
